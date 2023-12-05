@@ -57,21 +57,6 @@ class _MyHomePageState extends State<MyHomePage> {
   static const TextStyle optionStyle =
       TextStyle(fontSize: 30, fontWeight: FontWeight.bold);
 
-  // static const List<Widget> _widgetOptions = <Widget>[
-  //   Text(
-  //     'Index 0: Home',
-  //     style: optionStyle,
-  //   ),
-  //   Text(
-  //     'Index 1: Business',
-  //     style: optionStyle,
-  //   ),
-  //   Text(
-  //     'Index 2: School',
-  //     style: optionStyle,
-  //   ),
-  // ];
-
   void _onItemTapped(int index) {
     setState(() {
       _selectedIndex = index;
@@ -88,19 +73,6 @@ class _MyHomePageState extends State<MyHomePage> {
           length: 3,
           tabs: tabs,
           tabsView: tabsView,
-          // leadingAppBar: const IconButton(
-          //   onPressed: null,
-          //   icon: Icon(Icons.menu),
-          //   tooltip: 'Navigation menu',
-          // ),
-          // actionsAppBar: [
-          //   IconButton(
-          //     onPressed: null,
-          //     icon: Icon(Icons.search),
-          //     tooltip: 'Search',
-          //   )
-          // ],
-          // titleAppBar: Text('Almaly'),
           floatingActionButtons: [
             FloatingActionButton(
               onPressed: () {},

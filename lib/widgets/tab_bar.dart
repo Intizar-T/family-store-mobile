@@ -25,10 +25,7 @@ class TabBarWidget extends StatelessWidget {
         length: length,
         child: Scaffold(
           appBar: AppBar(
-            leading: leadingAppBar,
-            title: titleAppBar,
-            actions: actionsAppBar,
-            bottom: TabBar(tabs: tabs),
+            flexibleSpace: SafeArea(child: TabBar(tabs: tabs)),
           ),
           body: TabBarView(children: tabsView),
           floatingActionButton: floatingActionButtons != null
