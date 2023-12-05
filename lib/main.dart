@@ -23,29 +23,29 @@ class MyHomePage extends StatefulWidget {
 
 class _MyHomePageState extends State<MyHomePage> {
   static const List<String> drawerOptionNames = <String>[
-    "Almaly",
-    "Almalymy",
-    "Alyndy"
+    "Buy",
+    "Vote",
+    "Bought"
   ];
   int _selectedIndex = 0;
   String _title = drawerOptionNames[0];
   final List<Widget> tabs = [
-    Tab(text: 'Pyatorychka'),
-    Tab(text: 'Fix Price'),
-    Tab(text: 'Bashka')
+    Tab(text: 'Store 1'),
+    Tab(text: 'Store 2'),
+    Tab(text: 'Store 3')
   ];
   final List<Widget> tabsView = [
     Expanded(
         child: Center(
-      child: Text('Pyatorychka'),
+      child: Text('Store 1'),
     )),
     Expanded(
         child: Center(
-      child: Text('Fix Price'),
+      child: Text('Store 2'),
     )),
     Expanded(
         child: Center(
-      child: Text('Bashka'),
+      child: Text('Store 3'),
     )),
   ];
 
@@ -123,7 +123,7 @@ class _MyHomePageState extends State<MyHomePage> {
               decoration: BoxDecoration(
                 color: Colors.blue,
               ),
-              child: Text("Tashov's Store"),
+              child: Text("Family Store"),
             ),
             ListTile(
               title: Text(drawerOptionNames[0]),
